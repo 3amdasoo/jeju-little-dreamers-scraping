@@ -102,7 +102,7 @@ def insert_data(conn, cursor, data):
     conn.commit()
 
 # CSV 파일 읽기
-df = pd.read_csv('C:/study/csv/제주특별자치도_아동급식카드가맹점현황_20240520.csv', encoding='cp949')
+df = pd.read_csv('./제주특별자치도_아동급식카드가맹점현황_20240520.csv', encoding='cp949')
 
 # 첫 100개 행만 선택
 df = df.iloc[8202:8302]
